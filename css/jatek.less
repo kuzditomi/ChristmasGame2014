@@ -1,0 +1,194 @@
+@font-face {
+  font-family: Candy;
+  src: url("../fonts/saffrontoo.TTF");
+}
+body{
+  background: radial-gradient(#484,#242);
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.progress{
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+#ragaszto1, #ragaszto2, #instruction2, #instruction3, #instruction4{
+  display: none;
+}
+#instruction4{
+  text-align: right;
+}
+
+#story {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  margin: 0 auto;
+
+  .story-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../img/bad/start.jpg");
+//    background: url("../img/bad/ragaszto1/DSC_3007.JPG");
+//    background: url("../img/bad/ragaszto2/DSC_3087.JPG");
+    background-size: contain;
+
+    .part{
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .sub{
+      position: absolute;
+      top: 0;
+      right: 35px;
+      color:white;
+      font-size: 35px;
+	  text-shadow: 1px 1px #131;
+
+      h1{
+        font-size: 60px;
+        font-weight: bold;
+      }
+      *{
+        font-family: Candy !important;
+      }
+
+      .final{
+        display: none;
+        width: 200px;
+        float: left;
+        margin-top: 5px;
+        border: 2px solid white;
+        cursor: pointer;
+      }
+      .subtext{
+        float: left;
+      }
+    }
+  }
+}
+
+body.ready{
+  .szalag{
+    cursor: url('scissor.png') 20 18, default;
+  }
+}
+/* masni */
+#masni {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .szalag {
+    position: absolute;
+//    background: red;
+    display: block;
+    height: 2%;
+  }
+
+  .hosszu {
+    width: 28%;
+    height: 2%;
+    transform: rotate(20deg);
+    left: 22%;
+    top: 46%;
+  }
+  .rovid1 {
+    width: 12%;
+    transform: rotate(85deg);
+    top: 62%;
+    left: 44%;
+  }
+  .rovid2 {
+    width: 12%;
+    transform: rotate(81deg);
+    top: 60%;
+    left: 15%;
+  }
+  .rovid3 {
+    width: 15%;
+    transform: rotate(144deg);
+    top: 45%;
+    left: 19%;
+  }
+}
+
+/* ragasztok */
+#ragaszto1, #ragaszto2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .ragaszto{
+    position: absolute;
+//    background: red;
+    display: block;
+    cursor: url('nail.png') 20 16, default;
+
+    &.fenthatul{
+      height: 5%;
+      width: 6%;
+      transform: rotate(30deg);
+      top: 45%;
+      left: 20%;
+    }
+    &.fentelol{
+      height: 5%;
+      width: 6%;
+      transform: rotate(22deg);
+      top: 52.5%;
+      left: 34.5%;
+    }
+    &.balralent{
+      height: 4%;
+      width: 4%;
+      transform: rotate(109deg);
+      top: 70%;
+      left: 42%;
+    }
+    &.jobbralent{
+      height: 4%;
+      width: 5%;
+      transform: rotate(91deg);
+      top: 64%;
+      left: 46%;
+    }
+
+    &.fent{
+      height: 4%;
+      width: 5%;
+      transform: rotate(21deg);
+      top: 40%;
+      left: 22%;
+    }
+
+    &.bal{
+      height: 5%;
+      width: 6%;
+      transform: rotate(123deg);
+      top: 54.5%;
+      left: 20.5%;
+    }
+
+    &.jobb{
+      height: 5%;
+      width: 6%;
+      transform: rotate(35deg);
+      top: 55%;
+      left: 37.5%;
+    }
+  }
+}

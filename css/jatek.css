@@ -1,0 +1,184 @@
+@font-face {
+  font-family: Candy;
+  src: url("../fonts/saffrontoo.TTF");
+}
+body {
+  background: radial-gradient(#448844, #224422);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.progress {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  z-index: 10;
+}
+#ragaszto1,
+#ragaszto2,
+#instruction2,
+#instruction3,
+#instruction4 {
+  display: none;
+}
+#instruction4 {
+  text-align: right;
+}
+#story {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  margin: 0 auto;
+}
+#story .story-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../img/bad/start.jpg");
+  background-size: contain;
+}
+#story .story-container .part {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#story .story-container .sub {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  color: white;
+  font-size: 35px;
+  text-shadow: 1px 1px #131;
+}
+#story .story-container .sub h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#story .story-container .sub * {
+  font-family: Candy !important;
+}
+#story .story-container .sub .final {
+  display: none;
+  width: 200px;
+  float: left;
+  margin-top: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+#story .story-container .sub .subtext {
+  float: left;
+}
+body.ready .szalag {
+  cursor: url('scissor.png') 20 18, default;
+}
+/* masni */
+#masni {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#masni .szalag {
+  position: absolute;
+  display: block;
+  height: 2%;
+}
+#masni .hosszu {
+  width: 28%;
+  height: 2%;
+  transform: rotate(20deg);
+  left: 22%;
+  top: 46%;
+}
+#masni .rovid1 {
+  width: 12%;
+  transform: rotate(85deg);
+  top: 62%;
+  left: 44%;
+}
+#masni .rovid2 {
+  width: 12%;
+  transform: rotate(81deg);
+  top: 60%;
+  left: 15%;
+}
+#masni .rovid3 {
+  width: 15%;
+  transform: rotate(144deg);
+  top: 45%;
+  left: 19%;
+}
+/* ragasztok */
+#ragaszto1,
+#ragaszto2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#ragaszto1 .ragaszto,
+#ragaszto2 .ragaszto {
+  position: absolute;
+  display: block;
+  cursor: url('nail.png') 20 16, default;
+}
+#ragaszto1 .ragaszto.fenthatul,
+#ragaszto2 .ragaszto.fenthatul {
+  height: 5%;
+  width: 6%;
+  transform: rotate(30deg);
+  top: 45%;
+  left: 20%;
+}
+#ragaszto1 .ragaszto.fentelol,
+#ragaszto2 .ragaszto.fentelol {
+  height: 5%;
+  width: 6%;
+  transform: rotate(22deg);
+  top: 52.5%;
+  left: 34.5%;
+}
+#ragaszto1 .ragaszto.balralent,
+#ragaszto2 .ragaszto.balralent {
+  height: 4%;
+  width: 4%;
+  transform: rotate(109deg);
+  top: 70%;
+  left: 42%;
+}
+#ragaszto1 .ragaszto.jobbralent,
+#ragaszto2 .ragaszto.jobbralent {
+  height: 4%;
+  width: 5%;
+  transform: rotate(91deg);
+  top: 64%;
+  left: 46%;
+}
+#ragaszto1 .ragaszto.fent,
+#ragaszto2 .ragaszto.fent {
+  height: 4%;
+  width: 5%;
+  transform: rotate(21deg);
+  top: 40%;
+  left: 22%;
+}
+#ragaszto1 .ragaszto.bal,
+#ragaszto2 .ragaszto.bal {
+  height: 5%;
+  width: 6%;
+  transform: rotate(123deg);
+  top: 54.5%;
+  left: 20.5%;
+}
+#ragaszto1 .ragaszto.jobb,
+#ragaszto2 .ragaszto.jobb {
+  height: 5%;
+  width: 6%;
+  transform: rotate(35deg);
+  top: 55%;
+  left: 37.5%;
+}
